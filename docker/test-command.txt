@@ -1,0 +1,1 @@
+curl.exe --% -X POST "http://localhost:8080/flash/sanitize" -H "Accept: application/json" -H "Content-Type: application/json" -d "{\"requestId\":\"12345\",\"toSanitize\":\"hello world DELETE\"}"
