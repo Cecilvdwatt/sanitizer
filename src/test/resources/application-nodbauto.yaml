@@ -1,0 +1,10 @@
+spring:
+  autoconfigure:
+    exclude:
+      # we can mock the database, so exclude the config
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+flash:
+  sanitizer:
+    cache:
+      max-size: 100
+      expiry-time: PT30s
